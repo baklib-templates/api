@@ -1,0 +1,5 @@
+site:
+  language: en
+  settings:
+    head_html: ""
+    header_menu_html: "presets:header.html"

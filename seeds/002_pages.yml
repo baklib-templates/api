@@ -1,0 +1,4 @@
+pages:
+  template_name: index
+  settings:
+    api_document: "preset:baklib-api.json"

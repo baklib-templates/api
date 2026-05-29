@@ -1,19 +1,18 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "api_doc",
+    "theme_name": "api",
     "theme_label": "t:theme_label",
     "theme_version": "1.0.0",
     "theme_scope": "cms",
     "theme_author": "Baklib",
     "theme_description": "t:theme_description",
-    "theme_documentation_url": "https://help.baklib.cn/themes/daisy-wiki",
-    "theme_support_url": "https://help.baklib.cn/themes/daisy-wiki/settings",
+    "theme_documentation_url": "https://help.baklib.cn/themes",
+    "theme_support_url": "https://help.baklib.cn/themes",
     "theme_thumb_url": "images/theme/thumb.png",
     "theme_preview_images": [
-      "images/theme/api-doc.png",
-      "images/theme/index.png",
-      "images/theme/examples.png"
+      "images/theme/thumb.png",
+      "images/theme/index.png"
     ],
     "theme_languages": [
       {
@@ -35,140 +34,40 @@
     ],
     "recommendations": {
       "color_schemas": {
-        "fashion": {
-          "name": "时尚",
+        "baklib": {
+          "name": "Baklib",
           "colors": {
-            "--theme-color-primary": "#03A9F4",
-            "--theme-color-secondary": "#E91E63",
-            "--theme-color-accent": "#AAAAAA",
-            "--theme-color-info": "#2196F3",
-            "--theme-color-success": "#4CAF50",
-            "--theme-color-warning": "#FFC107"
+            "--theme-color-primary": "#0F766E",
+            "--theme-color-secondary": "#C2410C",
+            "--theme-color-accent": "#0F172A",
+            "--theme-color-info": "#60A5FA",
+            "--theme-color-success": "#14B8A6",
+            "--theme-color-warning": "#FDBA74"
           }
-        },
-        "old_school": {
-          "name": "复古",
-          "colors": {
-            "--theme-color-primary": "#9C27B0",
-            "--theme-color-secondary": "#673AB7",
-            "--theme-color-accent": "#AAAAAA",
-            "--theme-color-info": "#418CC8",
-            "--theme-color-success": "#29B52F",
-            "--theme-color-warning": "#FFC107"
-          }
-        }
-      },
-      "initial_pages": {
-        "default": {
-          "name": "产品指南",
-          "default": true,
-          "pages": [
-          ]
         }
       }
     }
   },
   {
-    "name": "t:settings_schema.generic.name",
-    "settings": [
-      {
-        "id": "company_name",
-        "label": "t:settings_schema.generic.settings.company_name.label",
-        "type": "text",
-        "default": "t:settings_schema.generic.settings.company_name.default"
-      },
-      {
-        "id": "copyright_info",
-        "type": "text",
-        "label": "t:settings_schema.generic.settings.copyright_info.label",
-        "default": "t:settings_schema.generic.settings.copyright_info.default"
-      },
-      {
-        "id": "is_allow_published_at",
-        "type": "checkbox",
-        "label": "文章内是否展示发布日期",
-        "default": true
-      },
-      {
-        "id": "is_allow_author",
-        "type": "checkbox",
-        "label": "文章内是否展示作者",
-        "default": true
-      },
-      {
-        "id": "tree_menu_style",
-        "type": "select",
-        "choices": [{"label":"tree:多层级折叠下拉","value":"tree"},{"label":"tree2:第一层级作为栏目展开","value":"tree2"}],
-        "label": "选择导航菜单样式",
-        "info": "影响前台站点左侧导航菜单的展示样式"
-      },
-      {
-        "id": "daisy_theme",
-        "type": "select",
-        "choices": [{"label":"light","value":"light"},{"label":"dark","value":"dark"},{"label":"cupcake","value":"cupcake"},{"label":"bumblebee","value":"bumblebee"},{"label":"emerald","value":"emerald"},{"label":"corporate","value":"corporate"},{"label":"synthwave","value":"synthwave"},{"label":"retro","value":"retro"},{"label":"cyberpunk","value":"cyberpunk"},{"label":"valentine","value":"valentine"},{"label":"halloween","value":"halloween"},{"label":"garden","value":"garden"},{"label":"forest","value":"forest"},{"label":"aqua","value":"aqua"},{"label":"lofi","value":"lofi"},{"label":"pastel","value":"pastel"},{"label":"fantasy","value":"fantasy"},{"label":"wireframe","value":"wireframe"},{"label":"black","value":"black"},{"label":"luxury","value":"luxury"},{"label":"dracula","value":"dracula"},{"label":"cmyk","value":"cmyk"},{"label":"autumn","value":"autumn"},{"label":"business","value":"business"},{"label":"acid","value":"acid"},{"label":"lemonade","value":"lemonade"},{"label":"night","value":"night"},{"label":"coffee","value":"coffee"},{"label":"winter","value":"winter"},{"label":"dim","value":"dim"},{"label":"nord","value":"nord"},{"label":"sunset","value":"sunset"}],
-        "label": "选择主题风格",
-        "info": "默认主题预览见：https://daisyui.com/docs/themes/"
-      },
-      {
-        "id": "is_close_theme_select",
-        "type": "checkbox",
-        "label": "去掉前台的主题选择下拉菜单",
-        "default": false
-      }
-    ]
-  },
-  {
-    "name": "t:settings_schema.generic.header_name",
-    "settings": [
-      {
-        "id": "header_menu_html",
-        "type": "html",
-        "label": "t:settings_schema.generic.settings.header_menu_html.label",
-        "rows": 10,
-        "placeholder": "<li><a href='#'> title </a></li>"
-      }
-    ]
-  },
-  {
-    "name": "t:settings_schema.generic.head_title",
+    "name": "t:schema.site.name",
     "settings": [
       {
         "id": "head_html",
         "type": "html",
-        "label": "t:settings_schema.generic.settings.head_html.label",
-        "info": "t:settings_schema.generic.settings.head_html.info",
+        "label": "t:schema.site.settings.head_html.label",
+        "info": "t:schema.site.settings.head_html.info",
         "rows": 10,
-        "placeholder": "t:settings_schema.generic.settings.head_html.placeholder"
-      }
-    ]
-  },
-  {
-    "name": "自定义 HTML 代码块",
-    "settings": [
-      {
-        "id": "features_one",
-        "type": "html",
-        "label": "Features One",
-        "rows": 10,
-        "placeholder": "some html code",
-        "info":"预设的 HTML 代码块，前端调用方法：site.settings.features_one"
+        "placeholder": "t:schema.site.settings.head_html.placeholder"
       },
       {
-        "id": "features_two",
+        "id": "header_menu_html",
         "type": "html",
-        "label": "Features Two",
+        "label": "t:schema.site.settings.header_menu_html.label",
         "rows": 10,
-        "placeholder": "some html code",
-        "info":"预设的 HTML 代码块，前端调用方法：site.settings.features_two"
-      },
-      {
-        "id": "features_three",
-        "type": "html",
-        "label": "Features Three",
-        "rows": 10,
-        "placeholder": "some html code",
-        "info":"预设的 HTML 代码块，前端调用方法：site.settings.features_three"
+        "placeholder": "<a href='#' class='hover:underline'>Link</a>",
+        "default": "presets:header.html"
       }
+ 
     ]
   }
 ]

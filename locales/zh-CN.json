@@ -1,48 +1,37 @@
 {
-  "theme_label": "Api-Doc",
-  "theme_description": "清晰简洁的 API 文档模板，支持代码示例、高亮响应内容，适用于接口管理与开发者中心。多语言支持，多主题配色，适合产品型平台定制使用。",
+  "theme_label": "Api Docs",
+  "theme_description": "单页 OpenAPI 文档主题：粘贴或链接 API 规范，通过 Stoplight Elements 渲染。",
   "generic": {
     "menu": "菜单",
-    "theme": "主题",
-    "close": "关闭",
-    "back": "返回",
-    "search": "搜索",
-    "popular_search": "热门搜索",
-    "search_result": "搜索结果",
-    "index": "首页",
-    "articles": "篇文章",
-    "read_more": "阅读更多",
-    "404": "404 页面找不到",
-    "403": "403 无访问权限",
-    "empty": "内容为空",
-    "sub_page_list": "子页面列表",
-    "prev_page": "上一页",
-    "next_page": "下一页",
-    "copyright": "版权所有",
-    "published_at": "发布于",
-    "hot_pages": "热门话题",
-    "recent_pages": "最近文章",
-    "tags": "标签"
+    "sign_out": "退出登录",
+    "empty": "尚未配置 API 文档。"
   },
-  "placeholders": {
-    "search": "在站内搜索",
-    "input_password": "输入密码"
-  },
-  "search": {
-    "search_title": "站内搜索",
-    "no_results": "没有结果"
-  },
-  "buttons": {
-    "submit": "提交",
-    "login": "登录",
-    "sso_login": "SSO 登录",
-    "baklib_login": "Baklib 账号登录"
-  },
-  "prompts": {
-    "page_restricted": "本页面需要认证才可以被访问"
-  },
-  "feedback": {
-    "title": "提交反馈",
-    "input_placeholder": "请输入反馈内容"
+  "schema": {
+    "site": {
+      "name": "站点设置",
+      "settings": {
+        "head_html": {
+          "label": "Head HTML 代码",
+          "info": "将嵌入站点 <head> 标签内，请使用标准 HTML 格式。",
+          "placeholder": "<meta name='author' content='Baklib' />"
+        },
+        "header_menu_html": {
+          "label": "页头导航"
+        }
+      }
+    },
+    "templates": {
+      "index": {
+        "description": "首页 — 渲染 OpenAPI 文档",
+        "settings": {
+          "api_document": {
+            "label": "OpenAPI 文档内容（JSON/YAML）"
+          },
+          "api_document_url": {
+            "label": "OpenAPI 文档 URL"
+          }
+        }
+      }
+    }
   }
 }

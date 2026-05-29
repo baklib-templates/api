@@ -1,71 +1,28 @@
 {
-  "settings_schema": {
-    "generic": {
-      "name": "Grundeinstellung",
-      "help_center_index_description": "Ideal für funktionsreiche Produktbenutzerhandbücher",
-      "list_index_description": "Listenwörterbuchstil",
-      "header_name": "Kopf- und Fußzeilenmenü",
-      "head_title": "Gehen Sie zu den HTML-Einstellungen",
+  "schema": {
+    "site": {
+      "name": "Site-Einstellungen",
       "settings": {
-        "hero_image_url": {
-          "label": "Heldenbanner",
-          "info": "Für das Help-Center-Indexthema wird eine Größe von 1900 x 600 Pixel empfohlen."
-        },
-        "title": {
-          "label": "Seitentitel"
-        },
-        "description": {
-          "label": "Seitenbeschreibung"
-        },
-        "hot_tags": {
-          "label": "Heiße Suchbegriffe (bitte durch Komma trennen: ,)"
-        },
-        "api_document_url": {
-          "label": "OpenAPI Dokument URL"
-        },
-        "api_document": {
-          "label": "OpenAPI Dokumentation"
-        },
-        "company_name": {
-          "label": "Name der Firma",
-          "default": "Tanmer Inc."
-        },
-        "copyright_info": {
-          "label": "Urheberrechtsinformationen",
-          "default": "Alle Urheberrechte gelten"
+        "head_html": {
+          "label": "Head HTML",
+          "info": "Wird im <head>-Tag der Site eingebettet. Gültiges HTML verwenden.",
+          "placeholder": "<meta name='author' content='Baklib' />"
         },
         "header_menu_html": {
-          "label": "Kopfnavigationsmenü",
-          "info": "Unterstützt HTML-, Javascript- und TailwindCss-Code"
-        },
-        "footer_menu_html": {
-          "label": "Fußzeilen-Navigationsmenü",
-          "info": "Unterstützt HTML-, Javascript- und TailwindCss-Code"
-        },
-        "head_html": {
-          "label": "Kopf-HTML-Code",
-          "info": "Dieser Teil des Inhalts wird in die eingebettet <head> Tag der Website. ",
-          "placeholder": "<meta name='author' content='Baklib' />"
+          "label": "Kopfzeilen-Navigation"
         }
       }
     },
-    "page": {
-      "name": "Seite",
-      "description": "Dokumentinhaltsseite",
-      "settings": {
-        "description": {
-          "label": "Beschreibung"
-        },
-        "content": {
-          "label": "Inhalt",
-          "info": "Von der Datenquelle synchronisiert, kann nicht bearbeitet werden"
-        },
-        "icon": {
-          "label": "SYMBOL",
-          "info": "Ein Verhältnis von 1:1 wird empfohlen"
-        },
-        "tags": {
-          "label": "Stichworte"
+    "templates": {
+      "index": {
+        "description": "Startseite — rendert das OpenAPI-Dokument",
+        "settings": {
+          "api_document": {
+            "label": "OpenAPI-Dokument (JSON/YAML)"
+          },
+          "api_document_url": {
+            "label": "OpenAPI-Dokument-URL"
+          }
         }
       }
     }

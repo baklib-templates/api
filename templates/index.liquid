@@ -1,51 +1,46 @@
-<section id="table-of-contents" aria-labelledby="table-of-contents-title" class="">
-  {% if page.settings.api_document %}
-  <elements-api
-  data-controller="element_doc"
-  data-element_doc-content-value="{{ page.settings.api_document }}"
-  router="hash"
-  hideTryIt = "true"
-  layout="responsive"
-  />
-  {% endif %}
-
-  {% if page.settings.api_document_url %}
+<section id="api-docs" class="min-h-[calc(100vh-4rem)] w-full">
+  {% if page.settings.api_document != blank %}
     <elements-api
-    apiDescriptionUrl="{{ page.settings.api_document_url }}"
-    router="hash"
-    hideTryIt = "true"
-    layout="responsive"
+      data-controller="element_doc"
+      data-element_doc-content-value="{{ page.settings.api_document }}"
+      router="hash"
+      hideTryIt="true"
+      layout="responsive"
     />
+  {% elsif page.settings.api_document_url != blank %}
+    <elements-api
+      apiDescriptionUrl="{{ page.settings.api_document_url }}"
+      router="hash"
+      hideTryIt="true"
+      layout="responsive"
+    />
+  {% else %}
+    <div class="page-container flex min-h-[calc(100vh-4rem)] items-center justify-center py-16 text-center text-base-content/60">
+      {{ 'generic.empty' | t }}
+    </div>
   {% endif %}
 </section>
 
-
 {% schema %}
 {
-"name": "Portal",
-"description": "Ideal for feature-rich portal site",
-"thumb_url": "images/theme/index-portal.png",
-"preview_image_urls": [
-"images/theme/index-portal.png"
-],
-"sub_page_templates": ["page"],
-"settings": [
-{
-"id": "title",
-"type": "text",
-"label": "t:settings_schema.generic.settings.title.label",
-"default": "Knowledge base site"
-},
-{
-"id": "api_document",
-"type": "textarea",
-"label": "t:settings_schema.generic.settings.api_document.label"
-},
-{
-"id": "api_document_url",
-"type": "text",
-"label": "t:settings_schema.generic.settings.api_document_url.label"
-}
-]
+  "name": "Api Docs",
+  "description": "t:schema.templates.index.description",
+  "thumb_url": "images/theme/thumb.png",
+  "preview_image_urls": [
+    "images/theme/index.png"
+  ],
+  "settings": [
+    {
+      "id": "api_document",
+      "type": "textarea",
+      "label": "t:schema.templates.index.settings.api_document.label",
+      "default": "preset:baklib-api.json"
+    },
+    {
+      "id": "api_document_url",
+      "type": "text",
+      "label": "t:schema.templates.index.settings.api_document_url.label"
+    }
+  ]
 }
 {% endschema %}

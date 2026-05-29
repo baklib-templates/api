@@ -1,0 +1,68 @@
+<article class="page-container mx-auto max-w-3xl space-y-12 py-10 text-base-content/80 lg:py-14">
+  <header class="space-y-3">
+    <p class="text-sm font-medium text-primary">About this theme</p>
+    <h1 class="text-3xl font-semibold text-base-content">API Docs</h1>
+    <p class="text-base leading-relaxed">
+      A one-page theme for OpenAPI docs. The home page shows your API reference with Stoplight Elements.
+    </p>
+  </header>
+
+  <section class="space-y-4 border-t border-base-300 pt-10">
+    <h2 class="text-3xl leading-6 font-semibold text-base-content">1. What it is</h2>
+    <ul class="list-disc space-y-2 pl-5">
+      <li><span class="font-medium text-base-content">Template:</span> Api Docs (<span class="font-mono text-sm">index</span>)</li>
+      <li><span class="font-medium text-base-content">Use case:</span> publish REST API reference from an OpenAPI JSON or YAML file</li>
+      <li><span class="font-medium text-base-content">Layout:</span> fixed header + full-width API viewer</li>
+    </ul>
+  </section>
+
+  <section class="space-y-4 border-t border-base-300 pt-10">
+    <h2 class="text-3xl leading-6 font-semibold text-base-content">2. Add your API document</h2>
+    <p>New sites start with a sample spec. To use your own:</p>
+    <ol class="list-decimal space-y-3 pl-5 marker:font-medium marker:text-primary">
+      <li>In Desk, open <span class="font-medium text-base-content">Pages</span> → <span class="font-medium text-base-content">Home</span> → <span class="font-medium text-base-content">Interface</span>.</li>
+      <li>Copy your external OpenAPI <span class="font-mono text-sm">.json</span> or <span class="font-mono text-sm">.yaml</span> file.</li>
+      <li>Paste it into <span class="font-medium text-base-content">OpenAPI document (JSON/YAML)</span> and save.</li>
+      <li>Publish and view the home page.</li>
+    </ol>
+
+    <figure class="overflow-hidden rounded-box border border-base-300 bg-base-200/30">
+      <img
+        src="{{ 'images/theme/settings.png' | asset_url }}"
+        alt="OpenAPI document field in the home page interface editor"
+        class="w-full"
+        width="1600"
+        height="900"
+        loading="lazy"
+      />
+      <figcaption class="border-t border-base-300 px-4 py-3 text-sm text-base-content/60">
+        Paste your API JSON into the field above.
+      </figcaption>
+    </figure>
+
+    <p class="text-sm text-base-content/60">
+      Tip: you can also set <span class="font-medium text-base-content">OpenAPI document URL</span> to load a remote spec instead.
+    </p>
+  </section>
+
+  <section class="space-y-4 border-t border-base-300 pt-10">
+    <h2 class="text-3xl leading-6 font-semibold text-base-content">3. Preview</h2>
+    <div class="grid gap-6 sm:grid-cols-1">
+      <figure class="overflow-hidden rounded-box border border-base-300 bg-base-200/30">
+        <img
+          src="{{ 'images/theme/index.png' | asset_url }}"
+          alt="API docs home page"
+          class="w-full"
+          width="1200"
+          height="900"
+          loading="lazy"
+        />
+        <figcaption class="border-t border-base-300 px-4 py-2 text-sm text-base-content/60">Home page</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer class="border-t border-base-300 pt-8 text-sm text-base-content/60">
+    <a href="{{ site.pages['/'].path }}" class="link link-primary">Back to API docs</a>
+  </footer>
+</article>

@@ -1,44 +1,37 @@
 {
-  "theme_label": "Api-Doc",
-  "theme_description": "Eine übersichtliche und schlanke API-Dokumentationsvorlage mit Unterstützung für Codebeispiele und hervorgehobene Antwortinhalte. Geeignet für Schnittstellenverwaltung und Entwicklerportale. Mehrsprachigkeit und verschiedene Farbschemata machen sie ideal für anpassbare Produktplattformen.",
+  "theme_label": "Api Docs",
+  "theme_description": "Einseitiges OpenAPI-Dokumentationsthema. API-Spezifikation einfügen oder verlinken und mit Stoplight Elements rendern.",
   "generic": {
-    "403": "403 Keine Zugriffsberechtigung",
-    "404": "404 Nicht gefunden",
-    "menu": "Speisekarte",
-    "theme": "Thema",
-    "close": "Schließen",
-    "back": "Zurück",
-    "search": "Suchen",
-    "popular_search": "Beliebte Suche",
-    "search_result": "entsprechendes Suchergebnis",
-    "index": "Heim",
-    "articles": "Artikel",
-    "read_more": "mehr lesen",
-    "empty": "Der Inhalt ist leer",
-    "sub_page_list": "Unterseiten",
-    "copyright": "Alle Rechte vorbehalten",
-    "published_at": "Veröffentlicht am",
-    "prev_page": "vorherige Seite",
-    "next_page": "Nächste Seite",
-    "hot_pages": "Heiße Besuchsartikel",
-    "recent_pages": "Aktuelle Artikel",
-    "tags": "Stichworte"
+    "menu": "Menü",
+    "sign_out": "Abmelden",
+    "empty": "Kein API-Dokument konfiguriert."
   },
-  "placeholders": {
-    "search": "Suche...",
-    "input_password": "Bitte geben Sie Ihr Passwort ein"
-  },
-  "buttons": {
-    "submit": "Einreichen",
-    "login": "Anmeldung",
-    "sso_login": "SSO-Anmeldung",
-    "baklib_login": "Anmeldung zum Baklib-Konto"
-  },
-  "prompts": {
-    "page_restricted": "Der Zugriff auf diese Seite ist nur mit Authentifizierung möglich"
-  },
-  "feedback": {
-    "title": "Geben Sie Feedback ab",
-    "input_placeholder": "Bitte geben Sie Feedback ein"
+  "schema": {
+    "site": {
+      "name": "Site-Einstellungen",
+      "settings": {
+        "head_html": {
+          "label": "Head HTML",
+          "info": "Wird im <head>-Tag der Site eingebettet. Gültiges HTML verwenden.",
+          "placeholder": "<meta name='author' content='Baklib' />"
+        },
+        "header_menu_html": {
+          "label": "Kopfzeilen-Navigation"
+        }
+      }
+    },
+    "templates": {
+      "index": {
+        "description": "Startseite — rendert das OpenAPI-Dokument",
+        "settings": {
+          "api_document": {
+            "label": "OpenAPI-Dokument (JSON/YAML)"
+          },
+          "api_document_url": {
+            "label": "OpenAPI-Dokument-URL"
+          }
+        }
+      }
+    }
   }
 }

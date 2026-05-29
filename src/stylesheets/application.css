@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/**
+ * daisyUI theme strategy: themes: false
+ * Colors are injected at runtime via snippets/_theme_runtime_colors.liquid.
+ */
+@plugin "daisyui" {
+  themes: false;
+  exclude: scrollbar, rootcolor;
+  logs: false;
+}
+
+:root {
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@source "../../layout/*.liquid";
+@source "../../snippets/*.liquid";
+@source "../../statics/*.liquid";
+@source "../../templates/*.liquid";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-screen px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Stoplight styles.min.css ships unlayered preflight (img { height: auto }) that overrides
+   @layer utilities. Brand avatars use fixed-size wrappers instead of h-* on img directly. */
+
+.ElementsTableOfContentsItem svg[data-icon="bullseye"] {
+  display: none;
+}
