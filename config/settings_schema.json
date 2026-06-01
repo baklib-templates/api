@@ -11,8 +11,8 @@
     "theme_support_url": "https://help.baklib.cn/themes",
     "theme_thumb_url": "images/theme/thumb.png",
     "theme_preview_images": [
-      "images/theme/thumb.png",
-      "images/theme/index.png"
+      "images/theme/${lang}/cover.png",
+      "images/theme/${lang}/index.png"
     ],
     "theme_languages": [
       {
@@ -67,7 +67,7 @@
         "placeholder": "<a href='#' class='hover:underline'>Link</a>",
         "default": "presets:header.html"
       }
- 
+
     ]
   }
 ]
