@@ -1,5 +1,5 @@
 {
-  "theme_label": "Api Docs",
+  "theme_label": "API",
   "theme_description": "A single-page OpenAPI documentation theme. Paste or link an API spec and render it with Stoplight Elements.",
   "generic": {
     "menu": "Menu",

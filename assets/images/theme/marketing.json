@@ -1,0 +1,28 @@
+{
+  "keywords": {
+    "zh-CN": [
+      "OpenAPI",
+      "单页文档",
+      "REST API",
+      "API 规范"
+    ]
+  },
+  "cover": {
+    "gradient_left": [[242, 252, 249], [224, 242, 235]],
+    "gradient_right": [[255, 248, 242], [248, 232, 220]],
+    "blob_palette": [
+      [13, 148, 136],
+      [20, 184, 166],
+      [45, 212, 191],
+      [234, 88, 12],
+      [251, 146, 60],
+      [253, 186, 116]
+    ],
+    "liquid_glass": {
+      "blobs": 6,
+      "blob_alpha": 30,
+      "blob_blur": 120,
+      "grain_amount": 0.025
+    }
+  }
+}

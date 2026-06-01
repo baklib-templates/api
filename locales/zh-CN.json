@@ -1,5 +1,5 @@
 {
-  "theme_label": "Api Docs",
+  "theme_label": "API",
   "theme_description": "单页 OpenAPI 文档主题：粘贴或链接 API 规范，通过 Stoplight Elements 渲染。",
   "generic": {
     "menu": "菜单",
