@@ -1,0 +1,4 @@
+{
+  "name": "API Docs Theme",
+  "install": "yarn install --frozen-lockfile"
+}
